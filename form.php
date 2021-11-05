@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
     // chemin vers un dossier sur le serveur qui va recevoir les fichiers uploadés (attention ce dossier doit être accessible en écriture)
     $uploadDir = 'public/uploads/';
     // le nom de fichier sur le serveur est ici généré à partir du nom de fichier sur le poste du client (mais d'autre stratégies de nommage sont possibles)
-    $uploadFile = $uploadDir . basename($_FILES['avatar']['name']);
+    $uploadFile = $uploadDir . basename($_FILES['avatar']['name']) . '_filtred';
     // Je récupère l'extension du fichier
     $extension = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
     // Les extensions autorisées
