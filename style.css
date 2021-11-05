@@ -1,0 +1,7 @@
+.identity-card {
+    display: flex;
+}
+
+.identity-card img{
+    width: 150px;
+}
